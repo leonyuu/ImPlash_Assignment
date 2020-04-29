@@ -67,6 +67,7 @@ extension HomeViewModel: UnsplashPhotoPickerDelegate {
         
         // Handle Single Photo
         guard let photoDetailsVC = VCManager.shared.getVC(storyBoard: .Main, vcName: .PhotoDetails) as? PhotoDetailsViewController else { return }
+        photoDetailsVC.unsplashPhoto = photos.first ?? nil
         rootController?.navigationController?.pushViewController(photoDetailsVC, animated: true)
     }
 

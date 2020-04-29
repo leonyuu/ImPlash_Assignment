@@ -26,11 +26,6 @@ enum Color: String {
 class GeneralManager {
     static let shared = GeneralManager()
     
-    // MARK: Check Internet Connection
-    func isConnectedToInternet() -> Bool {
-        return NetworkReachabilityManager()?.isReachable ?? false
-    }
-    
     // MARK: Create UI Alert Controller
     func createAlert(_ style: UIAlertController.Style,
                      _ title: String?,

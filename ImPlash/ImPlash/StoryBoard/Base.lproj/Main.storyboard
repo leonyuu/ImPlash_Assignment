@@ -96,26 +96,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02X-2n-63s">
-                                <rect key="frame" x="18" y="40" width="44" height="44"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OqU-GR-jl4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Vz-G6-MVo">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="519"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02X-2n-63s">
+                                                <rect key="frame" x="18" y="40" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="03c-Da-D0J"/>
+                                                    <constraint firstAttribute="height" constant="44" id="UYh-vV-Kq4"/>
+                                                </constraints>
+                                                <state key="normal" image="imsplash_icon_cancel"/>
+                                                <state key="highlighted" image="imsplash_icon_cancel_selected"/>
+                                                <connections>
+                                                    <action selector="onCloseBtn" destination="t3a-o8-LLT" eventType="touchUpInside" id="KRE-Xr-QHg"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imsplash_image_empty" translatesAutoresizingMaskIntoConstraints="NO" id="MjX-a8-aia">
+                                                <rect key="frame" x="0.0" y="107" width="375" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="Jiv-cJ-46g"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRZ-Dt-LrQ">
+                                                <rect key="frame" x="0.0" y="407" width="375" height="112"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="112" id="KaN-VZ-Z7q"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="02X-2n-63s" firstAttribute="leading" secondItem="2Vz-G6-MVo" secondAttribute="leading" constant="18" id="7GY-fH-SQE"/>
+                                            <constraint firstItem="hRZ-Dt-LrQ" firstAttribute="leading" secondItem="2Vz-G6-MVo" secondAttribute="leading" id="8ff-i8-lLw"/>
+                                            <constraint firstItem="hRZ-Dt-LrQ" firstAttribute="top" secondItem="MjX-a8-aia" secondAttribute="bottom" id="9dU-IT-p94"/>
+                                            <constraint firstAttribute="bottom" secondItem="hRZ-Dt-LrQ" secondAttribute="bottom" id="AJG-gd-DTH"/>
+                                            <constraint firstAttribute="trailing" secondItem="hRZ-Dt-LrQ" secondAttribute="trailing" id="ZGg-7Y-4WD"/>
+                                            <constraint firstItem="MjX-a8-aia" firstAttribute="leading" secondItem="2Vz-G6-MVo" secondAttribute="leading" id="cwf-0L-CSr"/>
+                                            <constraint firstAttribute="trailing" secondItem="MjX-a8-aia" secondAttribute="trailing" id="g0G-vF-jiG"/>
+                                            <constraint firstItem="MjX-a8-aia" firstAttribute="top" secondItem="02X-2n-63s" secondAttribute="bottom" constant="23" id="wc9-tz-8am"/>
+                                            <constraint firstItem="02X-2n-63s" firstAttribute="top" secondItem="2Vz-G6-MVo" secondAttribute="top" constant="40" id="yHu-4c-NSa"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="03c-Da-D0J"/>
-                                    <constraint firstAttribute="height" constant="44" id="UYh-vV-Kq4"/>
+                                    <constraint firstAttribute="bottom" secondItem="2Vz-G6-MVo" secondAttribute="bottom" id="9I4-zJ-mE8"/>
+                                    <constraint firstItem="2Vz-G6-MVo" firstAttribute="leading" secondItem="OqU-GR-jl4" secondAttribute="leading" id="9KQ-tT-iwy"/>
+                                    <constraint firstItem="2Vz-G6-MVo" firstAttribute="top" secondItem="OqU-GR-jl4" secondAttribute="top" id="CvZ-MB-ZNZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Vz-G6-MVo" secondAttribute="trailing" id="JNN-66-D3d"/>
+                                    <constraint firstItem="2Vz-G6-MVo" firstAttribute="width" secondItem="OqU-GR-jl4" secondAttribute="width" id="MNN-JO-HhL"/>
+                                    <constraint firstItem="2Vz-G6-MVo" firstAttribute="height" secondItem="OqU-GR-jl4" secondAttribute="height" priority="250" id="oFO-rT-uMs"/>
                                 </constraints>
-                                <state key="normal" image="imsplash_icon_cancel"/>
-                                <state key="highlighted" image="imsplash_icon_cancel_selected"/>
-                                <connections>
-                                    <action selector="onCloseBtn" destination="t3a-o8-LLT" eventType="touchUpInside" id="KRE-Xr-QHg"/>
-                                </connections>
-                            </button>
+                                <viewLayoutGuide key="contentLayoutGuide" id="xuS-xH-k5K"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="aBg-9y-6DW"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="02X-2n-63s" firstAttribute="leading" secondItem="ZTV-JG-sii" secondAttribute="leading" constant="18" id="3hq-n0-a7q"/>
-                            <constraint firstItem="02X-2n-63s" firstAttribute="top" secondItem="ZTV-JG-sii" secondAttribute="top" constant="40" id="GZJ-zE-oeF"/>
+                            <constraint firstItem="ZTV-JG-sii" firstAttribute="trailing" secondItem="OqU-GR-jl4" secondAttribute="trailing" id="5ti-rS-OmN"/>
+                            <constraint firstItem="OqU-GR-jl4" firstAttribute="leading" secondItem="ZTV-JG-sii" secondAttribute="leading" id="bYx-6O-bxQ"/>
+                            <constraint firstItem="ZTV-JG-sii" firstAttribute="bottom" secondItem="OqU-GR-jl4" secondAttribute="bottom" id="qwA-mi-aXy"/>
+                            <constraint firstItem="OqU-GR-jl4" firstAttribute="top" secondItem="ZTV-JG-sii" secondAttribute="top" id="r9T-Gj-FE8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZTV-JG-sii"/>
                     </view>
+                    <connections>
+                        <outlet property="imageHeightConstraint" destination="Jiv-cJ-46g" id="oIl-W4-5KO"/>
+                        <outlet property="imageView" destination="MjX-a8-aia" id="Iyb-sy-dxP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRj-Z5-c8R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,5 +178,6 @@
         <image name="imsplash_icon_cancel_selected" width="24" height="24"/>
         <image name="imsplash_icon_download" width="44" height="44"/>
         <image name="imsplash_icon_download_selected" width="44" height="44"/>
+        <image name="imsplash_image_empty" width="512" height="512"/>
     </resources>
 </document>

@@ -104,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				9984A3E72457FCEC00804F9A /* Manager */,
-				9984A3F324580C9900804F9A /* Model */,
 				9984A3F224580C5600804F9A /* ViewModel */,
 				9984A3F124580C4B00804F9A /* ViewController */,
 				9984A3F024580BC000804F9A /* StoryBoard */,
@@ -162,13 +161,6 @@
 				99E65EF024594F0000DE7887 /* PhotoDetailsViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		9984A3F324580C9900804F9A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		9984A3F82458243A00804F9A /* Fonts */ = {
