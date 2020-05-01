@@ -122,9 +122,78 @@
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRZ-Dt-LrQ">
                                                 <rect key="frame" x="0.0" y="407" width="375" height="112"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imsplash_icon_user" translatesAutoresizingMaskIntoConstraints="NO" id="hHl-fh-ub2">
+                                                        <rect key="frame" x="30" y="36" width="40" height="40"/>
+                                                        <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="HF7-In-UeR"/>
+                                                            <constraint firstAttribute="width" secondItem="hHl-fh-ub2" secondAttribute="height" multiplier="1:1" id="KqP-kc-ePD"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miguel Runa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFP-WO-x3q">
+                                                        <rect key="frame" x="80" y="40" width="171" height="18"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="18" id="DNF-o2-xIo"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@miguel_runa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvh-qq-ttf">
+                                                        <rect key="frame" x="80" y="63" width="171" height="14"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="14" id="2Or-HM-UlE"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSZ-ge-lAE">
+                                                        <rect key="frame" x="261" y="34" width="44" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="jDZ-Ah-rZX"/>
+                                                            <constraint firstAttribute="width" constant="44" id="yBr-tc-X0j"/>
+                                                        </constraints>
+                                                        <state key="normal" image="imsplash_icon_download"/>
+                                                        <state key="highlighted" image="imsplash_icon_download_selected"/>
+                                                        <connections>
+                                                            <action selector="onDownloadBtn" destination="t3a-o8-LLT" eventType="touchUpInside" id="u6W-6J-aqr"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p78-jz-qBD">
+                                                        <rect key="frame" x="313" y="34" width="44" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="44" id="EAr-RS-U3F"/>
+                                                            <constraint firstAttribute="height" constant="44" id="Z2x-1N-7kO"/>
+                                                        </constraints>
+                                                        <state key="normal" image="implash_icon_heart"/>
+                                                        <state key="highlighted" image="imsplash_icon_download_selected"/>
+                                                        <connections>
+                                                            <action selector="onFavouriteBtn" destination="t3a-o8-LLT" eventType="touchUpInside" id="UVE-uo-qqg"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstItem="cSZ-ge-lAE" firstAttribute="centerY" secondItem="hRZ-Dt-LrQ" secondAttribute="centerY" id="6ae-ew-4q0"/>
+                                                    <constraint firstItem="cSZ-ge-lAE" firstAttribute="leading" secondItem="zvh-qq-ttf" secondAttribute="trailing" constant="10" id="8eP-Bk-WF4"/>
+                                                    <constraint firstItem="hHl-fh-ub2" firstAttribute="leading" secondItem="hRZ-Dt-LrQ" secondAttribute="leading" constant="30" id="EZj-HJ-Gd1"/>
                                                     <constraint firstAttribute="height" constant="112" id="KaN-VZ-Z7q"/>
+                                                    <constraint firstItem="zvh-qq-ttf" firstAttribute="leading" secondItem="hHl-fh-ub2" secondAttribute="trailing" constant="10" id="NUN-em-DZk"/>
+                                                    <constraint firstItem="lFP-WO-x3q" firstAttribute="top" secondItem="hHl-fh-ub2" secondAttribute="top" constant="4" id="Osp-Hg-qsL"/>
+                                                    <constraint firstItem="lFP-WO-x3q" firstAttribute="leading" secondItem="hHl-fh-ub2" secondAttribute="trailing" constant="10" id="WDy-nV-KNV"/>
+                                                    <constraint firstItem="p78-jz-qBD" firstAttribute="leading" secondItem="cSZ-ge-lAE" secondAttribute="trailing" constant="8" id="bAa-Ld-9Ps"/>
+                                                    <constraint firstItem="cSZ-ge-lAE" firstAttribute="leading" secondItem="lFP-WO-x3q" secondAttribute="trailing" constant="10" id="bXF-Rw-TaJ"/>
+                                                    <constraint firstItem="zvh-qq-ttf" firstAttribute="top" secondItem="lFP-WO-x3q" secondAttribute="bottom" constant="5" id="bmC-4D-wbD"/>
+                                                    <constraint firstItem="p78-jz-qBD" firstAttribute="centerY" secondItem="hRZ-Dt-LrQ" secondAttribute="centerY" id="lmd-39-6Kc"/>
+                                                    <constraint firstItem="hHl-fh-ub2" firstAttribute="centerY" secondItem="hRZ-Dt-LrQ" secondAttribute="centerY" id="pro-nx-O9v"/>
+                                                    <constraint firstAttribute="trailing" secondItem="p78-jz-qBD" secondAttribute="trailing" constant="18" id="vVw-za-scl"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -166,6 +235,9 @@
                     <connections>
                         <outlet property="imageHeightConstraint" destination="Jiv-cJ-46g" id="oIl-W4-5KO"/>
                         <outlet property="imageView" destination="MjX-a8-aia" id="Iyb-sy-dxP"/>
+                        <outlet property="userDisplayNameLabel" destination="lFP-WO-x3q" id="rAe-M6-3Ti"/>
+                        <outlet property="userNameLabel" destination="zvh-qq-ttf" id="dko-kE-gFt"/>
+                        <outlet property="userProfileImageView" destination="hHl-fh-ub2" id="usm-gV-Ym8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRj-Z5-c8R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -174,10 +246,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="implash_icon_heart" width="44" height="44"/>
         <image name="imsplash_icon_cancel" width="24" height="24"/>
         <image name="imsplash_icon_cancel_selected" width="24" height="24"/>
         <image name="imsplash_icon_download" width="44" height="44"/>
         <image name="imsplash_icon_download_selected" width="44" height="44"/>
+        <image name="imsplash_icon_user" width="44" height="44"/>
         <image name="imsplash_image_empty" width="512" height="512"/>
     </resources>
 </document>

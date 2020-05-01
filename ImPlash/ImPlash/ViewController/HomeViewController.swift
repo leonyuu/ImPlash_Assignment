@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class HomeViewController: BaseViewController {
 
@@ -15,7 +16,7 @@ class HomeViewController: BaseViewController {
     @IBOutlet weak var containerView: UIView!
     
     @IBAction func onDownloadBtn() {
-        
+        view.makeToast("Collection is coming soon!")
     }
     
     lazy var homeViewModel: HomeViewModel = {

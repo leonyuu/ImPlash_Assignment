@@ -22,8 +22,8 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>SFUIDisplay_Bold.otf</string>
 		<string>SFUIDisplay_Heavy.otf</string>
-		<string>SFUIDisplay_Light.otf</string>
 		<string>SFUIDisplay_Regular.otf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>

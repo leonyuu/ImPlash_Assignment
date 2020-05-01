@@ -2,15 +2,9 @@
 platform :ios, '11.0'
 use_frameworks!
 
-def shared_pods  
-  # Alamofire
-  pod 'Alamofire', '5.0'
-
-  # SV Progress HUD
-  pod 'SVProgressHUD', '2.2.5'
-  
-  # Swifty JSON
-  pod 'SwiftyJSON', '~> 4.0'
+def shared_pods
+  # Toast Swift
+  pod 'Toast-Swift', '~> 5.0.1'
   
   # SD Web Image
   pod 'SDWebImage', '~> 5.0'

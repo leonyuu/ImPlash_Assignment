@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		991FDEC7245C3E5000C7219F /* SFUIDisplay_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 991FDEC6245C3E5000C7219F /* SFUIDisplay_Bold.otf */; };
 		99727D882457E4CB00FB8956 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99727D872457E4CB00FB8956 /* AppDelegate.swift */; };
 		99727D8C2457E4CB00FB8956 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99727D8B2457E4CB00FB8956 /* HomeViewController.swift */; };
 		99727D8F2457E4CB00FB8956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99727D8D2457E4CB00FB8956 /* Main.storyboard */; };
@@ -17,7 +18,6 @@
 		9984A3F524580F0500804F9A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984A3F424580F0500804F9A /* BaseViewController.swift */; };
 		9984A3F724580FBA00804F9A /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984A3F624580FBA00804F9A /* PhotoDetailsViewController.swift */; };
 		9984A3FC2458245200804F9A /* SFUIDisplay_Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9984A3F92458244D00804F9A /* SFUIDisplay_Heavy.otf */; };
-		9984A3FD2458245500804F9A /* SFUIDisplay_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9984A3FA2458244D00804F9A /* SFUIDisplay_Light.otf */; };
 		9984A3FE2458245700804F9A /* SFUIDisplay_Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9984A3FB2458244E00804F9A /* SFUIDisplay_Regular.otf */; };
 		9984A40124582B8500804F9A /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984A40024582B8500804F9A /* UIColor+Hex.swift */; };
 		9984A40324587FB000804F9A /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984A40224587FB000804F9A /* BaseViewModel.swift */; };
@@ -48,6 +48,7 @@
 		356ADB55B06F5EB2FF56874C /* Pods-ImSplash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImSplash.release.xcconfig"; path = "Target Support Files/Pods-ImSplash/Pods-ImSplash.release.xcconfig"; sourceTree = "<group>"; };
 		49CC1807CBF641877684D17A /* Pods_ImSplash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImSplash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFEC5B3A79D23702716E659 /* Pods-ImPlash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImPlash.release.xcconfig"; path = "Target Support Files/Pods-ImPlash/Pods-ImPlash.release.xcconfig"; sourceTree = "<group>"; };
+		991FDEC6245C3E5000C7219F /* SFUIDisplay_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFUIDisplay_Bold.otf; sourceTree = "<group>"; };
 		99727D842457E4CB00FB8956 /* ImSplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImSplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99727D872457E4CB00FB8956 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99727D8B2457E4CB00FB8956 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		9984A3F424580F0500804F9A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9984A3F624580FBA00804F9A /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
 		9984A3F92458244D00804F9A /* SFUIDisplay_Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFUIDisplay_Heavy.otf; sourceTree = "<group>"; };
-		9984A3FA2458244D00804F9A /* SFUIDisplay_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFUIDisplay_Light.otf; sourceTree = "<group>"; };
 		9984A3FB2458244E00804F9A /* SFUIDisplay_Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFUIDisplay_Regular.otf; sourceTree = "<group>"; };
 		9984A40024582B8500804F9A /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		9984A40224587FB000804F9A /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
@@ -166,8 +166,8 @@
 		9984A3F82458243A00804F9A /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				991FDEC6245C3E5000C7219F /* SFUIDisplay_Bold.otf */,
 				9984A3F92458244D00804F9A /* SFUIDisplay_Heavy.otf */,
-				9984A3FA2458244D00804F9A /* SFUIDisplay_Light.otf */,
 				9984A3FB2458244E00804F9A /* SFUIDisplay_Regular.otf */,
 			);
 			path = Fonts;
@@ -287,9 +287,9 @@
 			files = (
 				99727D942457E4CE00FB8956 /* LaunchScreen.storyboard in Resources */,
 				99727D912457E4CE00FB8956 /* Assets.xcassets in Resources */,
-				9984A3FD2458245500804F9A /* SFUIDisplay_Light.otf in Resources */,
 				9984A3FE2458245700804F9A /* SFUIDisplay_Regular.otf in Resources */,
 				99727D8F2457E4CB00FB8956 /* Main.storyboard in Resources */,
+				991FDEC7245C3E5000C7219F /* SFUIDisplay_Bold.otf in Resources */,
 				9984A3FC2458245200804F9A /* SFUIDisplay_Heavy.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

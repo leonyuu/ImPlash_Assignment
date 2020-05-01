@@ -23,19 +23,19 @@ class HomeViewModel: BaseViewModel {
         // Init Text, Style for Title Label
         titleLabel?.text = "Unsplash"
         titleLabel?.textColor = UIColor(hex: Color.DarkGrayText.rawValue)
-        titleLabel?.font = UIFont(name: SFUIDisplayFont.heavy.rawValue, size: 32)
+        titleLabel?.font = UIFont(name: SFUIDisplayFont.Heavy.rawValue, size: 32)
         
         // Init Text, Style for Description Label
         descriptionLabel?.text = "Beautiful, free photos."
         descriptionLabel?.textColor = UIColor(hex: Color.DarkGrayText.rawValue)
-        descriptionLabel?.font = UIFont(name: SFUIDisplayFont.regular.rawValue, size: 17)
+        descriptionLabel?.font = UIFont(name: SFUIDisplayFont.Regular.rawValue, size: 17)
     }
     
     func addPhotoViewController() {
         let queryText = "Girl"
         let configuration = UnsplashPhotoPickerConfiguration(
-            accessKey: UnsplashKey.access.rawValue,
-            secretKey: UnsplashKey.secret.rawValue,
+            accessKey: UnsplashKey.Access.rawValue,
+            secretKey: UnsplashKey.Secret.rawValue,
             query: queryText,
             allowsMultipleSelection: false
         )

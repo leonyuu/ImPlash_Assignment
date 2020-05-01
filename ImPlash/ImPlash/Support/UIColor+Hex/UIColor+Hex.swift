@@ -2,8 +2,8 @@
 //  UIColor+Hex.swift
 //  RealEstate
 //
-//  Created by Leon Yuu on 3/8/20.
-//  Copyright © 2020 ERM System. All rights reserved.
+//  Created by Leon Yuu on 4/22/20.
+//  Copyright © 2020 Maple Labs. All rights reserved.
 //
 
 import UIKit
